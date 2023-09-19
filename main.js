@@ -13,7 +13,7 @@ while (Contador < lista.length) {
         Tocar('#som_tecla_toim')
     }
 
-    const classe = Lista[contador].classList[1];
+    const classe = Lista[Contador].classList[1];
     console.log(classe);
     Contador = Contador + 1;
     console.log(Contador);
