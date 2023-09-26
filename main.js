@@ -4,19 +4,24 @@ function tocar(idElementoAudio) {
 
 const Lista = document.querySelectorAll('.tecla');
 
-let Contador = 0;
+let contador = 0;
 
 //enquanto-condiçao
 while (Contador < lista.length) {
+    const classe = Lista[contador].classList[1];
+
+
+    const idSom = `#som_${classe}`;
+    //console.log(idosom)
+    
     //acessando um elemento da lista
-    Lista[Contador].onclick = function () {
-        Tocar('#som_tecla_toim')
+    Lista[contador].onclick = function () {
+        Tocar(idSom)
     }
 
-    const classe = Lista[Contador].classList[1];
-    console.log(classe);
     Contador = Contador + 1;
-    console.log(Contador);
-
+    console.log(classe);
+    console.log(contador);
+    
 
 }
