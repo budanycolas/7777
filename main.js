@@ -24,4 +24,7 @@ while (Contador < lista.length) {
     console.log(contador);
     
 
+    tecla.classList.add('ativa');
+    tecla.classList.remove('ativa');
+    
 }
